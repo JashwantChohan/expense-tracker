@@ -57,10 +57,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target.classList.contains("edit-btn")) {
             const id = parseInt(e.target.dataset.id);
 
-            console.log("Edit Button Clicked! ID: ", id);  // Debugging log for the ID
-            console.log("Current Expenses: ", expenses);   // Debugging log for current expenses
+            console.log("Edit Button Clicked! ID: ", id);  
+            console.log("Current Expenses: ", expenses); 
 
-            const expense = expenses.find(expense => expense.id === id);  // Find the expense with the matching ID
+            const expense = expenses.find(expense => expense.id === id);  
 
             if (!expense) {
                 console.error("Expense not found!");
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function displayExpenses(expenses) {
-        expenseList.innerHTML = "";  // Clear the list before displaying new rows
+        expenseList.innerHTML = "";  
         expenses.forEach(expense => {
             const row = document.createElement("tr");
 
