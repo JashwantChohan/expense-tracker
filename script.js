@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
     expenseList.addEventListener("click", (e) => {
         // Delete Button Functionality
         if (e.target.classList.contains("delete-btn")) {
-            const id = parseInt(e.target.dataset.id);  // Get the ID from data-id
-            expenses = expenses.filter(expense => expense.id !== id);  // Remove the expense with matching ID
-            displayExpenses(expenses);  // Refresh the list
-            updateTotalAmount();  // Update the total amount
+            const id = parseInt(e.target.dataset.id);  
+            expenses = expenses.filter(expense => expense.id !== id);  
+            displayExpenses(expenses);  
+            updateTotalAmount();  
         }
 
         // Edit Button Functionality
